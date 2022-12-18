@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="calculator for arthmetic operations">
+    <meta name="keywords" content="Addition,substraction,multiplication,divition">
+    <meta name="author" content="John Doe">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="box-calculator">
+        <div class="container">
+            <div class="content">
+                <form >
+                    <input type="text" id="screen" name="input-number">
+                    <input type="button" class="button button1" value="1" onclick="screen.value+=1">
+                    <input type="button" class="button button2" value="2" onclick="screen.value+=2">
+                    <input type="button" class="button button3" value="3" onclick="screen.value+=3">
+                    <input type="button" class="button operator" value="+" onclick="screen.value+='+'">
+                    <input type="button" class="button button5" value="4" onclick="screen.value+=4">
+                    <input type="button" class="button button6" value="5" onclick="screen.value+=5">
+                    <input type="button" class="button button7" value="6" onclick="screen.value+=6">
+                    <input type="button" class="button operator" value="-" onclick="screen.value+='-'">
+                    <input type="button" class="button button9" value="7" onclick="screen.value+=7">
+                    <input type="button" class="button button10" value="8" onclick="screen.value+=8">
+                    <input type="button" class="button button11" value="9" onclick="screen.value+=9">
+                    <input type="button" class="button operator" value="*" onclick="screen.value+='*'">
+                    <input type="button" class="button button13" value="c" onclick="screen.value=''">
+                    <input type="button" class="button button14" value="0" onclick="screen.value+=0">
+                    <input type="button" class="button button15" value="=" id="eq"  onclick="equ()">
+                    <input type="button" class="button operator" value="/" onclick="screen.value+='/'">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        function equ()
+        {
+            var eq = eval(document.getElementById("screen").value);
+            document.getElementById("screen").value = eq;
+        }
+    </script>
+</body>
+</html>

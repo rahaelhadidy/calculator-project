@@ -1,0 +1,120 @@
+*
+{
+    box-sizing: border-box;
+}
+
+#box-calculator
+{
+    background-color: red;
+}
+
+.container
+{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.content
+{
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+form
+{
+    width: 100%;
+    /*background-color: rgb(100, 100, 100);*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 5px;
+   
+}
+
+#screen
+{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    border: none;
+    border: 1px solid #999;
+    color: rgb(37, 37, 36);
+    font-size: 20px;
+}
+
+.button
+{
+    display: block;
+    width: 20%;
+    padding: 15px 0;
+    border: none;
+    margin: 5px;
+    border: solid 1px #999;
+    background-color: rgb(243, 116, 158);
+    color: antiquewhite;
+    font-size: 18px;
+    box-shadow: 0 5px #888;
+    
+}
+
+.button:hover
+{
+    background-color: rgb(214, 57, 110);
+}
+
+.button:active
+{
+    background-color: rgb(214, 57, 110);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button13
+{
+    background-color: red;
+}
+
+.button13:hover
+{
+    background-color: rgb(143, 3, 3);
+}
+.button13:active
+{
+    background-color: rgb(143, 3, 3);
+}
+
+.operator
+{
+    background-color: crimson;
+}
+
+.operator:hover
+{
+    background-color: rgba(243, 4, 52,1);
+}
+.operator:active
+{
+    background-color: rgba(243, 4, 52,1);
+}
+
+
+/*.button:hover
+{
+    background-color: rgba(6, 148, 243, 0.4);
+}*/
+@media all and (max-width:600px)
+{
+    
+    .content
+    {
+        width: 100%;
+    }
+}
